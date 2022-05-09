@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "This is a description"
   spec.homepage = "https://github.com/tker-78/todo2.git"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.4"
 
   spec.metadata["allowed_push_host"] = "https://github.com/tker-78/todo2.git"
 

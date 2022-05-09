@@ -10,5 +10,13 @@ module Todo2
       'DONE' => DONE,
       'PENDING' => PENDING
       }.freeze
+
+      # def status_is(status)
+      #   # ステータス=statusのレコードを返す
+      #   self.where(status: status)
+      # end
+
+      # 通常のメソッド定義では、ActiveRecordRelationに接続できないため、scopeを用いて定義する
+      scope :status_is, ->(status) { where(status: status )}
   end
 end
