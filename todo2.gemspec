@@ -33,8 +33,9 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
-  spec.add_dependency "bundler", ' ~> 2.3'
+  spec.add_dependency "bundler", ' ~> 2.0'
   spec.add_dependency "rake", '~> 13.0'
+  spec.add_dependency "rspec", '~> 3.0'
   spec.add_dependency "yard", '~> 0.9'
   spec.add_dependency "activerecord", "~> 5.0.0"
   spec.add_dependency "sqlite3", "~> 1.3.0"
