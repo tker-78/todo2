@@ -24,5 +24,10 @@ module Todo2
     validates :content, presence: true
     # validationでSTATUSを参照するため、STATUSの定義よりも下の行に記載する必要あり
     validates :status, numericality: true, inclusion: {in: STATUS.values }
+
+
+    def status_name
+      STATUS.key(self.status)
+    end
   end
 end

@@ -1,3 +1,6 @@
 #!/usr/bin/env ruby
 
 require "todo2"
+
+# 標準入力から引数を受け取り、Command#runを実行する
+Todo2::Command.run(ARGV)
